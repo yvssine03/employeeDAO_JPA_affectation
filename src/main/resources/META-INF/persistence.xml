@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2"
+             xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+    <persistence-unit name="re" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>com.employeedao.DAO.EmployeeDAOImpl</class>
+        <class>com.employeedao.Model.Employee</class>
+        <class>com.employeedao.Model.Employees</class>
+        <properties>
+            <property name="jakarta.persistence.jdbc.url" value="mysql://avnadmin:AVNS_UpOgP0oF5yZGAkghH29@mysql-2fc8ac31-yassineifghane1234-cd8c.a.aivencloud.com:27569/defaultdb?ssl-mode=REQUIRED"/>
+            <property name="jakarta.persistence.jdbc.user" value="avnadmin"/>
+            <property name="jakarta.persistence.jdbc.password" value="AVNS_UpOgP0oF5yZGAkghH29"/>
+
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="eclipselink.logging.level" value="FINE"/>
+            <property name="eclipselink.ddl-generation" value="create-tables"/>
+        </properties>
+    </persistence-unit>
+</persistence>
